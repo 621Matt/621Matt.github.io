@@ -1,9 +1,17 @@
 body {
-    background-color: navy;
-    
+    background-color: rgb(52, 49, 61);
     font-family: sans-serif;
+    color: white;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, p, nav {
     font-family: Cambria;
+    color: white;
+    text-align: center;
 }
+
+/*URL LINKS*/
+a:hover {
+    color: pink;
+}
+
