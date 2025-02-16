@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Eric Web Enterprises</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+      /* Header / Nav Bar */
+      .container {
+        width: 90%;
+        padding: 0 40px 0 70px;
+        display: grid;
+        grid-template-columns: min-content auto;
+        align-items: center;
+      }
+
+      #header-img {
+        max-height: 80px;
+        border: 4px solid black;
+      }
+
+      .nav_class {
+        height: 80px;
+      }
+
+      .nav-link {
+        list-style-type: none;
+        display: inline-block;
+      }
+
+      .nav-link:nth-of-type(1) {
+        margin-right: 70%;
+      }
+
+      h1 {
+        display: inline;
+      }
+
+      #nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #4d7ea8;
+        width: 100%;
+        height: 11%;
+        border-bottom: 4px solid white;
+      }
+
+      #homelink {
+        text-decoration: none;
+        color: black;
+      }
+
+      #homelink:hover {
+        border: 2px solid white;
+        background-color: white;
+        border-radius: 4px;
+      }
+
+      /* Body */
+      body {
+        background-color: #272932;
+        font-family: Helvetica;
+      }
+
+      .divider {
+        padding-bottom: 6%;
+      }
+
+      /* Sections */
+      #welcome-page,
+      #contact {
+        color: #b6c2d9;
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+        color: black;
+        text-decoration: underline;
+      }
+
+      .pgraph {
+       
+        display: block;
+        width: 50%;
+        margin: auto auto;
+        
+      }
+
+      .pgraph2 {
+        
+        font-style: italic;
+      }
+
+      .list {
+        display: inline-block;
+        text-align: left;
+        
+        margin-top: -0.5%;
+        list-style-type: circle;
+      }
+
+      #contact-footer {
+        background-color: #4d7ea8;
+        text-align: center;
+        border-top: 2px solid white;
+        position: absolute;
+        bottom: 0;
+        width: 99.8%;
+        left: 0;
+        
+       
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <nav id="nav-bar">
+          <div class="container nav_class">
+            <img
+              id="header-img"
+              src="https://pnggallery.com/wp-content/uploads/camel-silhouette-04.png"
+              alt="Black camel silhouette"
+            >
+            <ul>
+              <li class="nav-link"><h1>Eric Web Enterprises</h1></li>
+              <li class="nav-link">
+                <h1><a href="/itis3135/index.html" id="homelink">Home</a></h1>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="divider"></div>
+      <section id="welcome-page">
+        <h2>Welcome to Eric Web Enterprises</h2>
+        <p class="pgraph">
+          Founded in 2025, Eric Web Enterprises is a online company specializing
+          in web development and software projects. Mainly focusing on helping
+          our clients establish a lasting online presence, we offer a wide range
+          of services. We pride ourselves on delivering tailored and modern
+          websites for our clients that drive growth and ensure the client's
+          success in the online world.
+        </p>
+        <p class="pgraph2">We pride ourselves on...</p>
+        <ul class="list">
+          <li id="list">Tailored Websites</li>
+          <li>Fast Creation</li>
+          <li>Great Customer Service</li>
+          <li>Client Priority</li>
+          <li>Low and Competitive Prices</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Client Services</h2>
+        <p class="pgraph">
+          Eric Web Enterprises offers a wide selection of software services to
+          our loyal clients. From website creation to online advising for a
+          previously created website. Anything web related Eric Web Enterprises
+          has got you covered, all you need to do is give us a call!
+        </p>
+      </section>
+      <footer id="contact-footer">
+        <p id="contact-info">
+          <strong>Email:</strong> ericwenterprises@gmail.com
+          <strong>Phone:</strong> (999)999-9900 <strong>Address:</strong> 3000
+          Rocky Rd.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
