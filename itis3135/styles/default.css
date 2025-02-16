@@ -1,5 +1,8 @@
 body {
-    background-color: rgb(52, 49, 61);
+    background-image: linear-gradient(rgb(52, 49, 61) 95%, #b7e9c1);
+    /* background: linear-gradient(to bottom, #34313d, #b7e9c1); */
+    width: auto;
+    height: 100vh;
     font-family: sans-serif;
     color: white;
 }
@@ -43,10 +46,14 @@ footer {
 }
 
 /*URL LINKS*/
-a:hover {
-    color: pink;
+a {
+    color: grey;
+    text-decoration: none;
 }
-a:visited {
-    color:grey;
+a:hover {
+    background-color: lightgrey;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
 }
 
