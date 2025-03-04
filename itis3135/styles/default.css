@@ -1,11 +1,64 @@
+/* Tablet */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+  body {
+    font-size: 14px;
+    background-color: red;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  main {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* Mobile */
+@media screen and (min-width: 370px) and (max-width: 600px) {
+  body {
+    background-color: blue;
+    font-size: 14px;
+  }
+
+  header {
+    padding: 10px;
+  }
+  main {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+/* Laptops */
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+  body {
+    background-color: green;
+    font-size: 18px;
+  }
+
+  header {
+    padding: 30px;
+  }
+
+  main {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
 body {
-  /* background-image: linear-gradient(rgb(52, 49, 61) 95%, #b7e9c1); */
-  /* background: linear-gradient(to bottom, #34313d, #b7e9c1); */
-  background-color: rgb(52, 49, 61);
+  /* background-color: rgb(52, 49, 61); */
   width: auto;
   height: 100vh;
   font-family: sans-serif;
-  /* color: white; */
+}
+
+main {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 h1,
@@ -14,7 +67,8 @@ h3,
 h4,
 h5,
 nav,
-p, .desc {
+p,
+.desc {
   font-family: Cambria;
   color: white;
   text-align: center;
@@ -24,7 +78,8 @@ p, .desc {
   font-weight: Bold;
 }
 
-.introduction, .contract {
+.introduction,
+.contract {
   font-family: Cambria;
   color: white;
   width: 40%;
@@ -34,10 +89,8 @@ p, .desc {
 .images {
   display: block;
   margin: 0 auto;
-  /* width: 25%;
-  height: 20%; */
   width: 35%;
-  height:auto;
+  height: auto;
 }
 
 figcaption {
@@ -65,12 +118,12 @@ a:hover {
   color: black;
 }
 
-
 /* website-evaluations */
 .desc {
-    margin-inline: 20%;
+  margin-inline: 20%;
 }
-.container, .desc{
+.container,
+.desc {
   display: flex;
   justify-content: space-between;
   color: black;
@@ -78,13 +131,14 @@ a:hover {
 
 .section-1,
 .section-2 {
-  width: 50%; 
+  width: 50%;
   height: auto;
   background-color: lightgray;
   margin: 10px;
   border-radius: 10px;
 }
 
-#goodDesign, #badDesign {
-    font-family: Cambria;
+#goodDesign,
+#badDesign {
+  font-family: Cambria;
 }
