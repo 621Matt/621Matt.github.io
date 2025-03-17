@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Hobby Page</title>
+    <style>
+      /* NAVBAR */
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #353a47;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        list-style-type: none;
+        margin: 0;
+      }
+      li {
+        float: left;
+        font-size: 32px;
+      }
+      li a {
+        display: block;
+        color: white;
+        padding: 14px 16px 14px 16px;
+        text-decoration: none;
+        font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+      }
+      li a:hover {
+        background-color: #c8e0f4;
+        color: black;
+        border-radius: 10px;
+      }
+
+      /* Footer */
+      footer {
+        margin-top: 4%;
+        min-height: 50px;
+        text-align: center;
+        background-color: #353a47;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+      }
+
+      footer a {
+        text-decoration: none;
+        color: gray;
+      }
+
+      footer a:hover {
+        background-color: #c8e0f4;
+        color: black;
+        border-radius: 5px;
+      }
+
+      /* Displaying one Page at a time*/
+      section {
+        padding-top: 4%;
+        display: none;
+      }
+      section:target {
+        display: block;
+      }
+
+      /* Main Styling */
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        background-color: lightcyan;
+        font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        font-size: 17px;
+      }
+
+      main {
+        flex: 1;
+      }
+
+      /* Homepage */
+      #container {
+        background-image: url("images/bark.jpg");
+        height: 70vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      #text-over-img {
+        background-color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        font-size: 32px;
+        color: white;
+      }
+
+      #container2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 4%;
+      }
+
+      .image-container {
+        margin-left: 35%;
+        position: center;
+        width: 55%;
+        height: auto;
+      }
+
+      .img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      }
+
+      .item1 {
+        width: 45%;
+        font-size: 17px;
+        height: auto;
+      }
+
+      .titles,
+      figcaption {
+        text-align: center;
+      }
+
+      /* About Me*/
+      #container3 {
+        padding-top: 4%;
+        display: grid;
+        grid-template-areas: "image-container2 container-content";
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0px;
+        padding-bottom: 5.1%;
+      }
+      #profilePic {
+        border-radius: 50%;
+        margin-left: 18%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      }
+      #image-container2 {
+        grid-area: image-container2;
+        margin-left: 35%;     
+        width: 60%;
+      }
+      #container-content {
+        grid-area: container-content;
+        margin-top: 0;
+        margin-left:0;
+        width: 50%;
+      }
+      .pageTitle {
+        text-align: center;
+        border-bottom: 1px solid black;
+      }
+      .pageSubTitle {
+        text-align: center;
+      }
+
+      /* My Journey */
+      #container4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .content4 {
+        margin-top: 11%;
+        width: 50%; 
+        height: 70%;
+      }
+
+      .content4-left {
+        margin-top: 11%;
+        height: auto;
+        margin-right: 0;
+        margin-left: 55%;
+      }
+
+      .image-container4 {
+        justify-items: center;
+        margin-right: 0;
+        margin-left: 20%;
+        position: center;
+        height: auto;
+      }
+
+      .image-container4-right {
+        justify-items: center;
+        margin-left: 0;
+        margin-right: 20%;
+        position: center;
+        height: auto;
+      }
+
+      .image4 {
+        width: 500px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      }
+
+      /* Where */
+      #container5 {
+        display: flex;
+        justify-content: center;
+      }
+
+      .image5 {
+        width: 500px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        margin: 10px 20px;
+      }
+
+      #content5 {
+        width: 60%;
+        font-size: 17px;
+        height: auto;
+        margin: auto;
+      }
+
+      /* How */
+      #container7 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .image-container7 {
+        margin-right: 0;
+        justify-items: center;
+
+        margin-top: 10%;
+        margin-left: 45%;
+      }
+
+      .image7 {
+        width: 100%;
+        height: 85%;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      }
+
+      #main-text {
+        width: 60%;
+        height: auto;
+        margin: auto;
+      }
+
+      .content7 {
+        margin-top: 10%;
+        width: 50%;
+        font-size: 17px;
+        height: auto;
+      }
+
+      /* Why */
+      #container6 {
+        padding-top: 4%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+  
+      }
+
+      #content6 {
+        width: 45%;
+        font-size: 17px;
+        height: auto;
+
+        margin-right: 0;
+        margin-left: 55%;
+      }
+
+      #image-container6 {
+        margin-right: 35%;
+        justify-items: center;
+
+        margin-top: 10%;
+        margin-left: 0;
+      }
+
+      
+      #image6 {
+        width: 100%;
+        height: 85%;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      }
+
+      /* Add device accessibility */
+      /* add alt texts to imgs */
+      /* add screen transitions */
+      /* Resize images for better quality */
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Course Page</a></li>
+          <li><a href="#what">Home</a></li>
+          <li><a href="#who">About Me</a></li>
+          <li><a href="#when">My Journey</a></li>
+          <li><a href="#where">Where</a></li>
+          <li><a href="#how">How</a></li>
+          <li><a href="#why">Why</a></li>
+          <li><a href="#aiPrompt">AI PROMPT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="who">
+        <div id="container3">
+          <figure id="image-container2">
+            <img id="profilePic" src="images/profileImg.jpg" alt="A picture of a dog wearing sunglasses" />
+            <figcaption><i>My Profile Picture</i></figcaption>
+          </figure>
+          <div id="container-content">
+            <h2 class="pageTitle">About Me</h2>
+            <p>
+              I am someone with a deep passion for creativity and craftsmanship,
+              especially in woodworking. I love exploring new techniques and
+              sharing my knowledge with others, whether you're just starting out
+              or an experienced maker. Outside of woodworking, I enjoy spending
+              time outdoors, finding inspiration from nature to help with my
+              next project.
+            </p>
+            <p>
+              Looking back, I started woodworking as a way to express my
+              creativity and make something tangible with my hands. The process
+              of transforming raw wood into functional art felt incredibly
+              rewarding and satisfying. It became a way for me to challenge
+              myself, learn new skills, and create unique pieces for my home.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="what">
+        <div id="container">
+          <div id="text-over-img">
+            <h2>Home</h2>
+            <p><i>Welcome to my hobby site, please have a look around.</i></p>
+          </div>
+        </div>
+
+        <div id="container2">
+          <figure class="image-container">
+            <img class="img" src="images/HomeImg.jpg" alt="A tape measure, pencil, and hammer on a wooden table" />
+            <figcaption><i>Simple Tools</i></figcaption>
+          </figure>
+          <div class="item1">
+            <h2 class="titles pageTitle">So. . . What is This?</h2>
+            <p>
+              Welcome to my woodworking hobby site, where I share my passion for
+              crafting beautiful and functional pieces from wood. Whether you're
+              a beginner or an experienced woodworker, here you'll find
+              everything regarding my woodworking journey and maybe some tips
+              along the way and inspiration to help you on your journey. I cover
+              a wide range of projects, from simple home decor to intricate
+              furniture designs. Join me as we explore the endless possibilities
+              of woodworking and create something amazing together!
+            </p>
+            <h3 class="titles">What is Woodworking?</h3>
+            <p>
+              For those who do not know, woodworking is the craft of creating
+              objects and structures by shaping and assembling wood. It involves
+              using tools like saws, drills, and sanders to cut, join, and
+              finish wood into various items, such as furniture, decor, or even
+              functional structures. Woodworking combines both skill and
+              creativity, allowing individuals to make custom, handcrafted
+              pieces.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="when">
+        <h2 class="pageTitle">My Journey</h2>
+        <div id="container4">
+          <figure class="image-container4">
+            <img class="image4" src="images/projectOne2.jpeg" alt="A simple wooden birdhouse hanging from a tree branch" />
+            <figcaption><i>A Simple Birdhouse, 1/23/20</i></figcaption>
+          </figure>
+          <div class="content4">
+            <h3 class="pageSubTitle">My First Project</h3>
+            <p>
+              My first woodworking project was a simple birdhouse, and it marked
+              the beginning of my woodworking journey. I chose this project
+              because it was manageable and allowed me to practice basic skills
+              like measuring, cutting, and assembling wood. It was incredibly
+              rewarding to create something functional and charming from
+              scratch, and seeing birds use the house I built made the
+              experience even more special. That first project sparked my
+              passion for woodworking and set me on the path to exploring more
+              complex creations.
+            </p>
+          </div>
+          <div class="content4-left">
+            <h3 class="pageSubTitle">My Second Project</h3>
+            <p>
+              My second woodworking project was a white chair, which was
+              definitely more challenging than my first. It required precise
+              measurements, more advanced joinery techniques, and careful
+              attention to detail to ensure stability and comfort. Painting it
+              white added an extra layer of complexity, as I had to sand and
+              finish the wood properly for a smooth, polished look. Completing
+              this project boosted my confidence and motivated me to take on
+              even more ambitious woodworking challenges.
+            </p>
+          </div>
+          <figure class="image-container4-right">
+            <img class="image4" src="images/projectTwo.jpeg" alt="A white wooden chair" />
+            <figcaption><i>White Porch Chair, 3/23/20</i></figcaption>
+          </figure>
+          <figure class="image-container4">
+            <img class="image4" src="images/projectThree.jpg" alt="A wooden bookshelf with 2 shelves filled with various things" />
+            <figcaption><i>Wooden bookshelf, 6/23/20</i></figcaption>
+          </figure>
+          <div class="content4">
+            <h3 class="pageSubTitle">My Third Project</h3>
+            <p>
+              My third woodworking project was a small bookshelf with a light
+              stain, and it turned out to be much harder than the chair. The
+              precision required for the shelves to be level and sturdy, along
+              with the added challenge of applying the stain evenly, pushed my
+              skills to the next level. I had to pay extra attention to joinery
+              and wood preparation to ensure both strength and a smooth finish.
+              Although it was a tough project, completing it taught me valuable
+              lessons in patience and craftsmanship, making it one of my most
+              rewarding creations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="where">
+        <h2 class="pageTitle">Where I Work</h2>
+        <div id="container5">
+          <figure class="image-container5">
+            <img class="image5" src="images/empty-garage.jpg" alt="An empty garage" />
+            <figcaption>
+              <i>Before Additions</i>
+            </figcaption>
+          </figure>
+          <figure class="image-container5">
+            <img class="image5" src="images/afterPic.jpg" alt="A garage with a woodworking bench and tools inside it" />
+            <figcaption>
+              <i>After Additions</i>
+            </figcaption>
+          </figure>
+        </div>
+        <h3 class="pageSubTitle">The Transformation</h3>
+        <p id="content5">
+          I do all of my work in my garage though I needed to change it up a
+          bit, as you see in the "After Additions" picture, before I could start
+          my woodworking journey. I did so by transforming my garage into a
+          functional woodworking workstation by carefully retrofitting the space
+          to meet my needs. First, I improved the lighting by installing bright,
+          energy-efficient LED fixtures, ensuring I have clear visibility for
+          detailed work. I added sturdy workbenches, organized my tools with
+          wall-mounted racks and pegboards, and installed proper ventilation to
+          keep the space comfortable and safe. Finally, I optimized storage with
+          shelves and cabinets, creating an efficient and inspiring environment
+          for all my woodworking projects.
+        </p>
+      </section>
+
+      <section id="how">
+        <h2 class="pageTitle">My Tools</h2>
+        <p id="main-text">
+          Since starting my woodworking journey back in 2020, I’ve picked up a
+          few essential tools that make the job much easier. While there are
+          countless tools one could use, I’d say these three are my most-used:
+          my mallet, drill, and trusty handsaw. The mallet helps me with precise
+          assembly and adjustments, the drill is indispensable for creating
+          clean, accurate holes, and my handsaw is perfect for quick, reliable
+          cuts. These tools have become my go-to companions, helping me bring
+          each woodworking project to life with confidence.
+        </p>
+        <div id="container7">
+          <figure class="image-container7">
+            <img class="image7" src="images/handsaw.jpeg" alt="A handsaw with a white background" />
+            <figcaption><i>The Handsaw</i></figcaption>
+          </figure>
+          <div class="content7">
+            <h3 class="pageSubTitle">1. Handsaw</h3>
+            <p class="sub-text">
+              The handsaw is my first pick because of its versatility,
+              precision, and reliability. It allows me to make clean, accurate
+              cuts with full control, whether I’m working on detailed joinery or
+              trimming wood to size. Unlike power tools, it’s quiet, easy to
+              handle, and doesn’t require electricity, making it perfect for any
+              project, big or small. Its simplicity and effectiveness make it an
+              indispensable tool in my woodworking toolkit.
+            </p>
+          </div>
+          <figure class="image-container7">
+            <img class="image7" src="images/drill.jpg" alt="A hand drill with a white background" />
+            <figcaption><i>Drill</i></figcaption>
+          </figure>
+          <div class="content7">
+            <h3 class="pageSubTitle">2. Drill</h3>
+            <p class="sub-text">
+              The drill is my second pick because of its efficiency and
+              versatility in woodworking projects. It’s essential for making
+              precise holes, driving screws, and even sanding or polishing with
+              the right attachments. The drill saves me a lot of time and
+              effort, especially when assembling pieces or creating joints,
+              ensuring my projects are both strong and accurately constructed.
+              Its reliability and ability to handle a variety of tasks make it a
+              must-have tool in my workshop.
+            </p>
+          </div>
+          <figure class="image-container7">
+            <img class="image7" src="images/mallet.jpg" alt="A mallet with a white background" />
+            <figcaption><i>Mallet</i></figcaption>
+          </figure>
+          <div class="content7">
+            <h3 class="pageSubTitle">3. Mallet</h3>
+            <p class="sub-text">
+              The mallet is my third pick because it’s incredibly useful for
+              tasks that require gentle but firm force. Unlike a regular hammer,
+              a mallet allows me to assemble joints, adjust pieces, and tap
+              chisels without damaging the wood. It gives me more control when
+              fitting parts together or making fine adjustments, ensuring
+              precision without leaving marks. Its ability to deliver
+              consistent, even pressure makes it an essential tool for achieving
+              quality craftsmanship in my woodworking projects.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="why">
+        <div id="container6">
+          <div id="content6">
+            <h2 class="pageTitle">Why...</h2>
+            <p>
+              <strong>Why did I create this website?</strong> It's simple
+              really, I wanted to have a dedicated space where I could store and
+              showcase my woodworking creations. It allows me to document each
+              project, track my progress, and reflect on my growth as a maker.
+              By sharing my work online, I also hope to inspire others to
+              explore woodworking and try their own hand at creating. This
+              website serves as both a personal portfolio and a resource for
+              fellow woodworking enthusiasts.
+            </p>
+            <h3 class="pageSubTitle">The Goal</h3>
+            <p>
+              If I had to choose then, the goal for this site is to share my
+              woodworking work, failings, and learning experiences with the
+              world. It’s a space where I can be open about both my successes
+              and challenges, showing that growth comes from trial and error. By
+              sharing my journey, I hope to inspire others to embrace the
+              process and learn from mistakes. Ultimately, I want this site to
+              be a place of encouragement and knowledge for anyone interested in
+              woodworking
+            </p>
+          </div>
+          <figure id="image-container6">
+            <img id="image6" src="images/thinkingManCrop.jpg" alt="A man scratching his head in confusion" />
+            <figcaption>The Thinking Man</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="aiPrompt">
+        <h2>AI PROMPT</h2>
+        <p>ai prompts used for text/images will go here</p>
+        <p><strong>-Homepage</strong></p>
+        <p>make 4 sentences about About my woodworking hobby site</p>
+        <p>briefly explain woodworking</p>
+        <p><strong>-About Me</strong></p>
+        <p>4 sentences about me</p>
+        <p>why i started woodworking in 3 sentences</p>
+        <p><strong>-My Journey</strong></p>
+        <p>first woodworking project, bird house</p>
+        <p>second woodworking project, white chair, more challenging</p>
+        <p>
+          third woodworking project, lightly stained small bookshelve, a lot
+          harder than chair
+        </p>
+        <p><strong>-Where</strong></p>
+        <p>how i retrofitted my garage to become my workstation</p>
+        <p><strong>-How</strong></p>
+        <p>
+          since starting my woodworking journey back in 2020 ive picked up a
+          couple of tools that help with the job. Though there are many tools
+          one should use for the job I think these three would probably be my
+          most used. The three being my mallet, drill, and trusty handsaw.
+        </p>
+        <p>why handsaw is my first pick</p>
+        <p>why drill is my second pick</p>
+        <p>why mallet is my third pick</p>
+        <p><strong>-Why</strong></p>
+        <p>
+          (goal is to share my work, failings, and learnign experiences with the
+          world)
+        </p>
+        <p>
+          reason for creating website (wanted a place to store my creations) in
+          four sentences
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Designed by
+        <a href="ericwebenterprises.com/index.html">Eric Web Enterprises</a> ©
+        2025
+      </p>
+    </footer>
+    <script
+      src="https://lint.page/kit/4d0fe3.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
