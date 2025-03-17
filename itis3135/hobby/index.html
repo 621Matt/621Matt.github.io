@@ -48,7 +48,8 @@
       /* Footer */
       footer {
         margin-top: 4%;
-        min-height: 50px;
+        /* min-height: 50px; */
+        /* max-height: 75px; */
         text-align: center;
         background-color: #353a47;
         border-top-right-radius: 10px;
@@ -56,6 +57,10 @@
         font-family: "Roboto", sans-serif;
         color: white;
         /* margin-bottom: absolute; */
+        /* position: relative;
+        bottom: 0;
+        width: 100%; */
+        
       }
 
       footer a {
@@ -82,7 +87,8 @@
       body {
         margin: 0;
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
+
         overflow-y: scroll;
         background-color: lightcyan;
         font-family: "Roboto", sans-serif;
@@ -90,6 +96,7 @@
         display: flex;
         flex-direction: column;
         font-size: 17px;
+        min-height: 100vh;
       }
 
       main {
@@ -159,6 +166,10 @@
         text-align: center;
       }
 
+      figcaption {
+        margin-top:1%;
+      }
+
       /* About Me*/
       #container3 {
         padding-top: 4%;
@@ -170,19 +181,22 @@
       }
       #profilePic {
         border-radius: 50%;
-        margin-left: 18%;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
       }
       #image-container2 {
         grid-area: image-container2;
         margin-left: 35%;
-        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        
       }
       #container-content {
         grid-area: container-content;
         margin-top: 0;
         margin-left: 0;
-        width: 50%;
+        max-width: 50%;
       }
       .pageTitle {
         text-align: center;
@@ -320,8 +334,8 @@
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
       }
 
-      /* Fix font */
-      /* Fix footer */
+      /* Fix font (Done) */
+      /* Fix footer link*/
       /* header height fix,  */
       /* fix about img, use flex, jusitfy center */
       /* Homepage bark img takes too long, resize it */
@@ -691,7 +705,7 @@
     <footer>
       <p>
         Designed by
-        <a href="ericwebenterprises.com/index.html">Eric Web Enterprises</a> ©
+        <a href="../ericwebenterprises.com/index.html">Eric Web Enterprises</a> ©
         2025
       </p>
     </footer>
