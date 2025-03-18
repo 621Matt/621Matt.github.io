@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Hobby Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <style>
       /* NAVBAR */
       nav {
@@ -19,10 +22,10 @@
         border-bottom-right-radius: 10px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
         z-index: 1000;
-        display: flex; /* Use flexbox */
-  align-items: center; /* Align items vertically */
-  justify-content: space-between; /* Space out elements */
-  padding: 0 20px; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
         /* min-height: 80px; Easy way */
       }
       #websiteName {
@@ -30,9 +33,9 @@
         font-family: "Roboto", sans-serif;
         font-size: 32px;
         color: white;
-        
-
-
+        margin: 0;
+        /* margin-bottom: 10%; */
+        /* margin-right: 100px; */
       }
       ul {
         display: flex;
@@ -41,27 +44,31 @@
         padding: 0;
         list-style-type: none;
         margin: 0;
+        /* margin-top: 0;
+        margin-bottom: 0; */
+        flex: 1;
       }
       li {
-        float: left;
+        /* float: left; */
+        float: none;
         font-size: 30px;
       }
       li a {
-        
         display: block;
         color: white;
         padding: 14px 16px 14px 16px;
         text-decoration: none;
         font-family: "Roboto", sans-serif;
+        text-align: center;
       }
-      #abc {
+      /* #abc {
         margin-left: 100px;
-      }
+      } */
       li a:hover {
         background-color: #c8e0f4;
         color: black;
         border-radius: 10px;
-        margin: 40px;
+        /* margin: 40px; */
       }
 
       /* Footer */
@@ -73,7 +80,6 @@
         border-top-left-radius: 10px;
         font-family: "Roboto", sans-serif;
         color: white;
-        
       }
 
       footer a {
@@ -119,7 +125,7 @@
 
       /* Homepage */
       #container {
-        background-image: url("images/homepageImg.jpg");
+        background-image: url("images/HomepageImg.jpg");
         height: 70vh;
         background-position: center;
         background-repeat: no-repeat;
@@ -181,7 +187,7 @@
       }
 
       figcaption {
-        margin-top:1%;
+        margin-top: 1%;
       }
 
       /* About Me*/
@@ -204,7 +210,6 @@
         flex-direction: column;
         justify-items: center;
         align-items: center;
-        
       }
       #container-content {
         grid-area: container-content;
@@ -346,18 +351,22 @@
         border-radius: 10px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
       }
+      /* AI prompt */
+      table,
+      th,
+      td {
+        margin: auto;
+        border: 1px solid black;
+        border-collapse: collapse;
+        background-color: white;
+      }
+      table {
+        width: 50%;
+      }
 
-      /* Fix font (Done) */
-      /* Fix footer link (Done) */
-      /* header height fix,  (DOne) */
-      /* fix about img, use flex, jusitfy center (Done) */
-      /* Homepage bark img takes too long, resize it */
-      /* Add device accessibility */
-      /* add alt texts to imgs */
-      /* add screen transitions */
-      /* Resize images for better quality */
-      /* Add page title */
-
+      .divder {
+        color: lightblue;
+      }
     </style>
   </head>
 
@@ -366,12 +375,19 @@
       <nav>
         <ul>
           <li><h1 id="websiteName">Woodcraft with Eric</h1></li>
+
           <li><a href="#what" id="abc">Home</a></li>
+          <li class="divder">-</li>
           <li><a href="#who">About Me</a></li>
+          <li class="divder">-</li>
           <li><a href="#when">My Journey</a></li>
+          <li class="divder">-</li>
           <li><a href="#where">Where</a></li>
+          <li class="divder">-</li>
           <li><a href="#how">How</a></li>
+          <li class="divder">-</li>
           <li><a href="#why">Why</a></li>
+          <li class="divder">-</li>
           <li><a href="#aiPrompt">AI Prompt</a></li>
         </ul>
       </nav>
@@ -679,50 +695,88 @@
       </section>
 
       <section id="aiPrompt">
-        <h2>AI PROMPT</h2>
-        <p>ai prompts used for text/images will go here</p>
-        <p><strong>-Homepage</strong></p>
-        <p>make 4 sentences about About my woodworking hobby site</p>
-        <p>briefly explain woodworking</p>
-        <p><strong>-About Me</strong></p>
-        <p>4 sentences about me</p>
-        <p>why i started woodworking in 3 sentences</p>
-        <p><strong>-My Journey</strong></p>
-        <p>first woodworking project, bird house</p>
-        <p>second woodworking project, white chair, more challenging</p>
-        <p>
-          third woodworking project, lightly stained small bookshelve, a lot
-          harder than chair
-        </p>
-        <p><strong>-Where</strong></p>
-        <p>how i retrofitted my garage to become my workstation</p>
-        <p><strong>-How</strong></p>
-        <p>
-          since starting my woodworking journey back in 2020 ive picked up a
-          couple of tools that help with the job. Though there are many tools
-          one should use for the job I think these three would probably be my
-          most used. The three being my mallet, drill, and trusty handsaw.
-        </p>
-        <p>why handsaw is my first pick</p>
-        <p>why drill is my second pick</p>
-        <p>why mallet is my third pick</p>
-        <p><strong>-Why</strong></p>
-        <p>
-          (goal is to share my work, failings, and learnign experiences with the
-          world)
-        </p>
-        <p>
-          reason for creating website (wanted a place to store my creations) in
-          four sentences
-        </p>
+        <h2 class="pageTitle">AI PROMPT</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Prompt</th>
+              <th>Model</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Make 4 sentences about my woodworking hobby site</td>
+              <td>ChatGPT 4.0</td>
+            </tr>
+            <tr>
+              <td>4 sentences about me</td>
+              <td>ChatGPT 4.0</td>
+            </tr>
+            <tr>
+              <td>Why I started woodworking in 3 sentences</td>
+              <td>ChatGPT 4.0</td>
+            </tr>
+            <tr>
+              <td>First woodworking project: birdhouse</td>
+              <td>ChatGPT 4.0</td>
+            </tr>
+            <tr>
+              <td>Second woodworking project: white chair, more challenging</td>
+              <td>ChatGPT 4.0</td>
+            </tr>
+            <tr>
+              <td>
+                Third woodworking project: lightly stained small bookshelf,
+                harder than the chair
+              </td>
+              <td>ChatGPT 4.0</td>
+            </tr>
+            <tr>
+              <td>How I retrofitted my garage to become my workstation</td>
+              <td>ChatGPT 4.0</td>
+            </tr>
+            <tr>
+              <td>My top 3 tools: mallet, drill, and handsaw</td>
+              <td>ChatGPT 4.0</td>
+            </tr>
+            <tr>
+              <td>Why the handsaw is my first pick</td>
+              <td>ChatGPT 4.0</td>
+            </tr>
+            <tr>
+              <td>Why the drill is my second pick</td>
+              <td>ChatGPT 4.0</td>
+            </tr>
+            <tr>
+              <td>Why the mallet is my third pick</td>
+              <td>ChatGPT 4.0</td>
+            </tr>
+            <tr>
+              <td>
+                Goal: Share my work, failings, and learning experiences with the
+                world
+              </td>
+              <td>ChatGPT 4.0</td>
+            </tr>
+            <tr>
+              <td>
+                Reason for creating the website: A place to store my creations
+              </td>
+              <td>ChatGPT 4.0</td>
+            </tr>
+            <tr>
+              <td>Briefly explain woodworking</td>
+              <td>ChatGPT 4.0</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
     <footer>
       <p>
-        Created for <a href="../index.html">Course Page</a> |
-        Designed by
-        <a href="../ericwebenterprises.com/index.html">Eric Web Enterprises</a> ©
-        2025
+        Created for <a href="../index.html">Course Page</a> | Designed by
+        <a href="../ericwebenterprises.com/index.html">Eric Web Enterprises</a>
+        © 2025
       </p>
     </footer>
     <script
