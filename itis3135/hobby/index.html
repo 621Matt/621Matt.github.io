@@ -19,7 +19,7 @@
         border-bottom-right-radius: 10px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
         z-index: 1000;
-        min-height: 75px;
+        /* min-height: 80px; Easy way */
       }
       ul {
         display: flex;
@@ -76,19 +76,20 @@
 
       /* Displaying one Page at a time*/
       section {
-        padding-top: 4%;
+        /* padding-top: 4%; */
         display: none;
       }
       section:target {
         display: block;
+      }
+      section:not(#what) {
+        padding-top: 4%;
       }
 
       /* Main Styling */
       body {
         margin: 0;
         width: 100%;
-        /* height: 100%; */
-
         overflow-y: scroll;
         background-color: lightcyan;
         font-family: "Roboto", sans-serif;
@@ -322,7 +323,6 @@
       #image-container6 {
         margin-right: 35%;
         justify-items: center;
-
         margin-top: 10%;
         margin-left: 0;
       }
@@ -335,14 +335,15 @@
       }
 
       /* Fix font (Done) */
-      /* Fix footer link*/
+      /* Fix footer link (Done) */
       /* header height fix,  */
-      /* fix about img, use flex, jusitfy center */
+      /* fix about img, use flex, jusitfy center (Done) */
       /* Homepage bark img takes too long, resize it */
       /* Add device accessibility */
       /* add alt texts to imgs */
       /* add screen transitions */
       /* Resize images for better quality */
+      
     </style>
   </head>
 
