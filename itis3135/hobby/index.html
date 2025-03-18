@@ -26,7 +26,6 @@
         align-items: center;
         justify-content: space-between;
         padding: 0 20px;
-        
       }
       #websiteName {
         font-family: "Roboto", sans-serif;
@@ -62,12 +61,11 @@
         font-family: "Roboto", sans-serif;
         text-align: center;
       }
-
       li a:hover {
         background-color: #c8e0f4;
         color: black;
         border-radius: 10px;
-        
+      
       }
 
       /* Footer */
@@ -93,6 +91,9 @@
       }
 
       /* Displaying one Page at a time*/
+      section:first-child {
+        display: block;
+      }
       section {
         display: none;
       }
@@ -392,37 +393,6 @@
     </header>
 
     <main>
-      <section id="who">
-        <div id="container3">
-          <figure id="image-container2">
-            <img
-              id="profilePic"
-              src="images/profileIG.jpg"
-              alt="A picture of a dog wearing sunglasses"
-            />
-            <figcaption><i>My Profile Picture</i></figcaption>
-          </figure>
-          <div id="container-content">
-            <h2 class="pageTitle">About Me</h2>
-            <p>
-              I am someone with a deep passion for creativity and craftsmanship,
-              especially in woodworking. I love exploring new techniques and
-              sharing my knowledge with others, whether you're just starting out
-              or an experienced maker. Outside of woodworking, I enjoy spending
-              time outdoors, finding inspiration from nature to help with my
-              next project.
-            </p>
-            <p>
-              Looking back, I started woodworking as a way to express my
-              creativity and make something tangible with my hands. The process
-              of transforming raw wood into functional art felt incredibly
-              rewarding and satisfying. It became a way for me to challenge
-              myself, learn new skills, and create unique pieces for my home.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section id="what">
         <div id="container">
           <div id="text-over-img">
@@ -465,6 +435,39 @@
           </div>
         </div>
       </section>
+
+      <section id="who">
+        <div id="container3">
+          <figure id="image-container2">
+            <img
+              id="profilePic"
+              src="images/profileIG.jpg"
+              alt="A picture of a dog wearing sunglasses"
+            />
+            <figcaption><i>My Profile Picture</i></figcaption>
+          </figure>
+          <div id="container-content">
+            <h2 class="pageTitle">About Me</h2>
+            <p>
+              I am someone with a deep passion for creativity and craftsmanship,
+              especially in woodworking. I love exploring new techniques and
+              sharing my knowledge with others, whether you're just starting out
+              or an experienced maker. Outside of woodworking, I enjoy spending
+              time outdoors, finding inspiration from nature to help with my
+              next project.
+            </p>
+            <p>
+              Looking back, I started woodworking as a way to express my
+              creativity and make something tangible with my hands. The process
+              of transforming raw wood into functional art felt incredibly
+              rewarding and satisfying. It became a way for me to challenge
+              myself, learn new skills, and create unique pieces for my home.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      
 
       <section id="when">
         <h2 class="pageTitle">My Journey</h2>
