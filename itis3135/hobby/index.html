@@ -19,47 +19,60 @@
         border-bottom-right-radius: 10px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
         z-index: 1000;
+        display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space out elements */
+  padding: 0 20px; 
         /* min-height: 80px; Easy way */
+      }
+      #websiteName {
+        /* margin-right: 1%; */
+        font-family: "Roboto", sans-serif;
+        font-size: 32px;
+        color: white;
+        
+
+
       }
       ul {
         display: flex;
         justify-content: center;
+        align-items: center;
         padding: 0;
         list-style-type: none;
         margin: 0;
       }
       li {
         float: left;
-        font-size: 32px;
+        font-size: 30px;
       }
       li a {
+        
         display: block;
         color: white;
         padding: 14px 16px 14px 16px;
         text-decoration: none;
         font-family: "Roboto", sans-serif;
       }
+      #abc {
+        margin-left: 100px;
+      }
       li a:hover {
         background-color: #c8e0f4;
         color: black;
         border-radius: 10px;
+        margin: 40px;
       }
 
       /* Footer */
       footer {
         margin-top: 4%;
-        /* min-height: 50px; */
-        /* max-height: 75px; */
         text-align: center;
         background-color: #353a47;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
         font-family: "Roboto", sans-serif;
         color: white;
-        /* margin-bottom: absolute; */
-        /* position: relative;
-        bottom: 0;
-        width: 100%; */
         
       }
 
@@ -106,7 +119,7 @@
 
       /* Homepage */
       #container {
-        background-image: url("images/bark.jpg");
+        background-image: url("images/homepageImg.jpg");
         height: 70vh;
         background-position: center;
         background-repeat: no-repeat;
@@ -336,13 +349,14 @@
 
       /* Fix font (Done) */
       /* Fix footer link (Done) */
-      /* header height fix,  */
+      /* header height fix,  (DOne) */
       /* fix about img, use flex, jusitfy center (Done) */
       /* Homepage bark img takes too long, resize it */
       /* Add device accessibility */
       /* add alt texts to imgs */
       /* add screen transitions */
       /* Resize images for better quality */
+      /* Add page title */
 
     </style>
   </head>
@@ -351,14 +365,14 @@
     <header>
       <nav>
         <ul>
-          <li><a href="../index.html">Course Page</a></li>
-          <li><a href="#what">Home</a></li>
+          <li><h1 id="websiteName">Woodcraft with Eric</h1></li>
+          <li><a href="#what" id="abc">Home</a></li>
           <li><a href="#who">About Me</a></li>
           <li><a href="#when">My Journey</a></li>
           <li><a href="#where">Where</a></li>
           <li><a href="#how">How</a></li>
           <li><a href="#why">Why</a></li>
-          <li><a href="#aiPrompt">AI PROMPT</a></li>
+          <li><a href="#aiPrompt">AI Prompt</a></li>
         </ul>
       </nav>
     </header>
@@ -369,7 +383,7 @@
           <figure id="image-container2">
             <img
               id="profilePic"
-              src="images/profileImg.jpg"
+              src="images/profileIG.jpg"
               alt="A picture of a dog wearing sunglasses"
             />
             <figcaption><i>My Profile Picture</i></figcaption>
@@ -407,7 +421,7 @@
           <figure class="image-container">
             <img
               class="img"
-              src="images/HomeImg.jpg"
+              src="images/image.jpg"
               alt="A tape measure, pencil, and hammer on a wooden table"
             />
             <figcaption><i>Simple Tools</i></figcaption>
@@ -444,7 +458,7 @@
           <figure class="image-container4">
             <img
               class="image4"
-              src="images/projectOne2.jpeg"
+              src="images/birdHouse.jpg"
               alt="A simple wooden birdhouse hanging from a tree branch"
             />
             <figcaption><i>A Simple Birdhouse, 1/23/20</i></figcaption>
@@ -466,11 +480,11 @@
           <div class="content4-left">
             <h3 class="pageSubTitle">My Second Project</h3>
             <p>
-              My second woodworking project was a white chair, which was
+              My second woodworking project was a grey chair, which was
               definitely more challenging than my first. It required precise
               measurements, more advanced joinery techniques, and careful
               attention to detail to ensure stability and comfort. Painting it
-              white added an extra layer of complexity, as I had to sand and
+              grey added an extra layer of complexity, as I had to sand and
               finish the wood properly for a smooth, polished look. Completing
               this project boosted my confidence and motivated me to take on
               even more ambitious woodworking challenges.
@@ -479,16 +493,16 @@
           <figure class="image-container4-right">
             <img
               class="image4"
-              src="images/projectTwo.jpeg"
-              alt="A white wooden chair"
+              src="images/chair.jpg"
+              alt="A grey wooden chair"
             />
-            <figcaption><i>White Porch Chair, 3/23/20</i></figcaption>
+            <figcaption><i>Grey Chair, 3/23/20</i></figcaption>
           </figure>
           <figure class="image-container4">
             <img
               class="image4"
-              src="images/projectThree.jpg"
-              alt="A wooden bookshelf with 2 shelves filled with various things"
+              src="images/bookcase.jpg"
+              alt="A wooden bookshelf filled with various things"
             />
             <figcaption><i>Wooden bookshelf, 6/23/20</i></figcaption>
           </figure>
@@ -515,7 +529,7 @@
           <figure class="image-container5">
             <img
               class="image5"
-              src="images/empty-garage.jpg"
+              src="images/emptyGarage.jpg"
               alt="An empty garage"
             />
             <figcaption>
@@ -525,7 +539,7 @@
           <figure class="image-container5">
             <img
               class="image5"
-              src="images/afterPic.jpg"
+              src="images/finishedGarage.jpg"
               alt="A garage with a woodworking bench and tools inside it"
             />
             <figcaption>
@@ -565,7 +579,7 @@
           <figure class="image-container7">
             <img
               class="image7"
-              src="images/handsaw.jpeg"
+              src="images/handsaw.jpg"
               alt="A handsaw with a white background"
             />
             <figcaption><i>The Handsaw</i></figcaption>
@@ -585,7 +599,7 @@
           <figure class="image-container7">
             <img
               class="image7"
-              src="images/drill.jpg"
+              src="images/drillStock.jpg"
               alt="A hand drill with a white background"
             />
             <figcaption><i>Drill</i></figcaption>
@@ -606,7 +620,7 @@
           <figure class="image-container7">
             <img
               class="image7"
-              src="images/mallet.jpg"
+              src="images/malletStock.jpg"
               alt="A mallet with a white background"
             />
             <figcaption><i>Mallet</i></figcaption>
@@ -705,6 +719,7 @@
     </main>
     <footer>
       <p>
+        Created for <a href="../index.html">Course Page</a> |
         Designed by
         <a href="../ericwebenterprises.com/index.html">Eric Web Enterprises</a> ©
         2025
