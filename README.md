@@ -1,8 +1,4 @@
 # 621Matt.github.io
-Introduction
-
-Skills
-
-Projects
+Repo for my UNCC Work
 
 
