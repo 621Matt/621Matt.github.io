@@ -34,6 +34,11 @@ p,
   color: white;
 }
 
+.contract {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
 .images {
   display: block;
   margin: 0 auto;
@@ -90,6 +95,55 @@ a:hover {
 #badDesign {
   font-family: Cambria;
 }
+
+/* Whimsical Company */
+.containerTwo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.containerThree {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+ol{
+  background-color: white;
+  border: 2px black solid;
+}
+ol li {
+  background-color: lightgrey;
+}
+li:first-of-type {
+  list-style-type: none;
+}
+.table-style {
+  margin: auto;
+  background-color: white;
+  width: 70%;
+}
+.table-style1{
+  margin: auto;
+  background-color: white;
+  width: 90%;
+}
+.table-style1 th:not(.finalRow) {
+  background-color: grey;
+}
+.finalRow {
+  background-color: white;
+}
+tr:nth-of-type(even) {
+  background-color: lightgrey;
+}
+td {
+  border: 1px solid black;
+}
+
+figcaption {
+  color: white;
+  padding-top: 10px;
+}
+
 
 /* Mobile */
 @media screen and (min-width: 370px) and (max-width: 600px) {

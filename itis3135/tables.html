@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eric Carter-Barkman's Express Camel | ITIS 3135 | Table</title>
+    <link rel="stylesheet" href="styles/default.css" />
+  </head>
+  <body>
+    <header>
+      <div data-include="components/header.html"></div>
+    </header>
+    <main>
+      <h2>Whimsical Company</h2>
+
+      <div class="containerThree">
+        <section>
+          <h3>My Table Data</h3>
+          <ol start="0">
+            <li>Name, Email, Years of Service</li>
+            <li>John Doe, johnD@gmail.com, 6</li>
+            <li>Jake Don, jDon@gmail.com, 1</li>
+            <li>Billy Bob, billyB@gmail.com, 12</li>
+            <li>Davey Dave, daveyD@gmail.com, 15</li>
+            <li>Jane Johnson, jjohnson@gmail.com, 1</li>
+            <li>Bruce Parker, bruceP@gmail.com, 6</li>
+            <li>Ben Lee, bennyL@gmail.com, 3</li>
+            <li>Zack Vincent, zackV@gmail.com, 10</li>
+          </ol>
+        </section>
+      </div>
+
+      <div class="containerTwo">
+        <section>
+          <h3>Employee Data in Simple Table</h3>
+          <table class="table-style">
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Years of Service</th>
+            </tr>
+            <tr>
+              <td>John Doe</td>
+              <td>johnD@gmail.com</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>Jake Don</td>
+              <td>jDon@gmail.com</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Billy Bob</td>
+              <td>billyB@gmail.com</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Davey Dave</td>
+              <td>daveyD@gmail.com</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Jane Johnson</td>
+              <td>jjohnson@gmail.com</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Bruce Parker</td>
+              <td>bruceP@gmail.com</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>Ben Lee</td>
+              <td>bennyL@gmail.com</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Zack Vincent</td>
+              <td>zackV@gmail.com</td>
+              <td>10</td>
+            </tr>
+          </table>
+        </section>
+
+        <section>
+          <figure>
+          <h3>Employee Data in Complex Table</h3>
+          <table class="table-style1">
+            <tr>
+              <th id="category">Category</th>
+              <th id="name">Name</th>
+              <th id="email">Email</th>
+              <th id="yearsOfService">Years of Service</th>
+              <th id="salary">Monthly Salary</th>
+            </tr>
+            <tr>
+              <td headers="category" rowspan="2">Managers</td>
+              <td headers="name">John Doe</td>
+              <td headers="email">johnD@gmail.com</td>
+              <td headers="yearsOfService">6</td>
+              <td headers="salary">$85,000</td>
+            </tr>
+            <tr>
+              <td headers="category">Jake Don</td>
+              <td headers="email">jDon@gmail.com</td>
+              <td  headers="yearsOfService">1</td>
+              <td headers="salary">$85,000</td>
+            </tr>
+            <tr>
+              <td headers="category" rowspan="3">Marketing Team</td>
+              <td headers="name">Billy Bob</td>
+              <td headers="email">billyB@gmail.com</td>
+              <td headers="yearsOfService">12</td>
+              <td headers="salary">$65,000</td>
+            </tr>
+            <tr>
+              <td headers="category">Davey Dave</td>
+              <td  headers="email">daveyD@gmail.com</td>
+              <td headers="yearsOfService">15</td>
+              <td headers="salary">$65,000</td>
+            </tr>
+            <tr>
+              <td headers="category">Jane Johnson</td>
+              <td  headers="email">jjohnson@gmail.com</td>
+              <td headers="yearsOfService">1</td>
+              <td headers="salary">$65,000</td>
+            </tr>
+            <tr>
+              <td headers="category" rowspan="3">Software Engineers</td>
+              <td headers="name">Bruce Parker</td>
+              <td headers="email">bruceP@gmail.com</td>
+              <td headers="yearsOfService">6</td>
+              <td headers="salary">$80,000</td>
+            </tr>
+            <tr>
+              <td headers="category">Ben Lee</td>
+              <td  headers="email">bennyL@gmail.com</td>
+              <td headers="yearsOfService">3</td>
+              <td headers="salary">$80,000</td>
+            </tr>
+            <tr>
+              <td headers="category">Zack Vincent</td>
+              <td  headers="email">zackV@gmail.com</td>
+              <td headers="yearsOfService">10</td>
+              <td headers="salary">$80,000</td>
+            </tr>
+            <tr>
+              <th id="totalYearsOfService" colspan="3" class="finalRow">Total Years of Service</th>
+              <td headers="totalYearsOfService" class="finalRow">54</td>
+              <td headers="totalYearsOfService" class="finalRow">$605,000</td>
+            </tr>
+          </table>
+          <figcaption>Employee Information</figcaption>
+        </figure>
+        </section>
+        
+      </div>
+    </main>
+    <footer>
+      <!--Web Links-->
+      <div data-include="components/footer.html"></div>
+    </footer>
+    <script
+      src="https://lint.page/kit/4d0fe3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/include.js"></script>
+  </body>
+</html>
