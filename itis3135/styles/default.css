@@ -5,6 +5,14 @@ body {
   font-family: sans-serif;
 }
 
+.header-container {
+  padding-bottom: 2%;
+}
+
+.footer-container {
+  padding-top: 10%;
+}
+
 main {
   max-width: 1200px;
   width: 90%;
@@ -32,6 +40,11 @@ p,
 .contract {
   font-family: Cambria;
   color: white;
+}
+
+.introduction {
+  width: 50%;
+  margin: 0 auto;
 }
 
 .contract {
@@ -113,7 +126,7 @@ ol{
 ol li {
   background-color: lightgrey;
 }
-li:first-of-type {
+#first {
   list-style-type: none;
 }
 .table-style {
@@ -144,6 +157,36 @@ figcaption {
   padding-top: 10px;
 }
 
+/* Project Overview */
+#page-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.box {
+  margin: 0 auto;
+  width: 60%;
+  color: white;
+}
+
+.box2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.box3 {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.box4 {
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 5%;
+}
 
 /* Mobile */
 @media screen and (min-width: 370px) and (max-width: 600px) {
