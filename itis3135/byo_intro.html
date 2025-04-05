@@ -1,90 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Eric Carter-Barkman's Express Camel | ITIS 3135 | Build Your Own
-      Introduction Page
+        Eric Carter-Barkman's Express Camel | ITIS 3135 | Build Your Own
+        Introduction Page
     </title>
-    <link rel="stylesheet" href="styles/default.css" >
-  </head>
-  <body>
+    <link rel="stylesheet" href="styles/default.css" />
+</head>
+
+<body>
     <header>
-      <div data-include="components/header.html"></div>
+        <div data-include="components/header.html"></div>
     </header>
     <main>
-      <h2>BYO Introduction Page</h2>
+        <div id="pageBox">
+            <form id="intro-form">
+                <h2>BYO Introduction Page</h2>
+                <h3>
+                    Time to BYO Intro page, please fill out the form below so we can
+                    create your own page. * means the field is required for submission.
+                </h3>
+                <div id="formDiv">
+                    <label for="fName">* Enter your first name: </label>
+                    <input type="text" id="fName" value="Eric" required />
+
+                    <label for="lName">* Enter your last name: </label>
+                    <input type="text" id="lName" value="Carter-Barkman" required />
+
+                    <label for="mascot">* Enter your Mascot name: </label>
+                    <input type="text" id="mascot" value="Express Camel" required />
+
+
+                    <label for="mascot">* Upload your profile picture: </label>
+                    <input type="file" id="imageUpload" required />
+
+                    <label for="img-caption">* Enter an image caption: </label>
+                    <input type="text" id="img-caption" value="A simple picture of me" required />
+
+
+                    <label for="background">* Enter your personal background: </label>
+                    <!-- <input type="text" id="background" required -->
+                    <!-- value=" Hey! My name is Eric M. Carter-Barkman, but I usually go by my middle name, Matthew. I’m 20 years old and was born in Portsmouth, Virginia. My family moved down to Charlotte shortly after and I’ve been living my life here for as long as I can remember." /> -->
+                    <textarea id="background" required>
+Hey! My name is Eric M. Carter-Barkman, but I usually go by my middle name, Matthew. I’m 20 years old and was born in Portsmouth, Virginia. My family moved down to Charlotte shortly after and I’ve been living my life here for as long as I can remember.</textarea>
+
+
+                    <label for="pro-background">* Enter your professional background:
+                    </label>
+                    <!-- <input type="text" id="pro-background" value="N/A" required /> -->
+                    <textarea id="pro-background" required>N/A</textarea>
+
+
+                    <label for="acad-background">* Enter your academic background:
+                    </label>
+                    <!-- <input
+              type="text"
+              id="acad-background"
+              required
+              value=" Currently in my sophomore year studying Computer Science at UNCC with a concentration in Web Development and Software Engineering."
+            /> -->
+                    <textarea id="acad-background"
+                        required>Currently in my sophomore year studying Computer Science at UNCC with a concentration in Web Development and Software Engineering.</textarea>
+
+
+                    <label for="web-background">* Enter your web dev background: </label>
+                    <!-- <input type="text" id="web-background" value="N/A" required /> -->
+                    <textarea id="web-background" required>N/A</textarea>
+
+
+                    <label for="platform">* Enter your computer platform: </label>
+                    <input type="text" id="platform" value="Windows 11" required />
+
+
+                    <!-- courses -->
+                    <!-- course id, description, reason for taking course -->
+                    <!-- add remove button for every course -->
+                    <label>Courses you are taking (Department, Number, Reason):</label>
+                    <div id="moreCourses"></div>
+                    <button type="button" onclick="addClass()">Add Class</button>
+
+                    <label for="funny">Enter something funny about yourself: </label>
+                    <!-- <input
+              type="text"
+              id="funny"
+              value="I like to jailbreak gaming devices for fun. Started doing it as a kid and so far I have successfully jailbroken a couple devices like the Ps Vita, PsP Go, and 3ds. There’s tons of documentation on the overall process, as well as videos, so all you really need is an old device and anybody can do it."
+            /> -->
+                    <textarea id="funny" required>I like to jailbreak gaming devices for fun. Started doing it as a kid and so far I have successfully jailbroken a couple devices like the Ps Vita, PsP Go, and 3ds. There’s tons of documentation on the overall process, as well as videos, so all you really need is an old device and anybody can do it.</textarea>
+
+
+                    <label for="more">Anything else? </label>
+                    <!-- <input type="text" id="more" value="N/A" /> <br /> -->
+                    <textarea id="more">N/A</textarea>
+
+                    <label for="agreement">
+                        * "I understand that what is on this page is not password protected
+                        and I will not put anything here that I don’t want publicly
+                        available."
+                    </label>
+                    <input type="checkbox" id="agreement" required />
+
+                    <div id="buttons">
+                        <button id="submit" type="submit" value="Submit">Submit</button>
+                        <button id="reset" type="reset" onclick="resetForm()">Reset Form</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="result"></div>
     </main>
-    <!-- hide on submit      -->
-    <div id="fields">
-      <h3 id="instructions">
-        Time to BYO Intro page, please fill out the form below so we can create
-        your own page.
-      </h3>
-      <form>
-        <!-- show which fields are required on page -->
-        <label for="name">Enter your name: </label>
-        <input type="text" id="name" /> <br />
-        <!-- first name -->
-        <!-- middle initial but make one character -->
-        <!-- last name -->
-
-        <label for="mascot">Enter your Mascot name: </label>
-        <input type="text" id="mascot" /> <br />
-
-        <!-- image -->
-        <!--  -->
-        <label for="img-caption">Enter an image caption: </label>
-        <input type="text" id="img-caption" /> <br />
-
-        <label for="background">Enter your personal background: </label>
-        <input type="text" id="background" /> <br />
-
-        <label for="pro-background">Enter your professional background: </label>
-        <input type="text" id="pro-background" /> <br />
-
-        <label for="acad-background">Enter your academic background: </label>
-        <input type="text" id="acad-background" /> <br />
-
-        <label for="web-background">Enter your web dev background: </label>
-        <input type="text" id="web-background" /> <br />
-
-        <label for="platform">Enter your computer platform: </label>
-        <input type="text" id="platform" /> <br />
-
-        <!-- courses --> 
-         <!-- course id, description, reason for taking course -->
-         <!-- add remove button for every course -->
-        <label for="funny">Enter something funny about yourself: </label>
-        <input type="text" id="funny" /> <br />
-
-        <label for="more">Anything else? </label>
-        <input type="text" id="more" /> <br />
-
-        <label for="agreement">
-          "I understand that what is on this page is not password protected and
-          I will not put anything here that I don’t want publicly available."
-        </label>
-        <input type="checkbox" id="agreement" required /> <br />
-
-        <button type="submit" value="Submit">Submit</button>
-        <button type="reset" onclick="resetForm()">Reset Form</button>
-      </form>
-    </div>
-
-    <div id="result">
-        <!-- use forloop is js to push info to this div -->
-    </div>
-
     <footer>
-      <div data-include="components/footer.html"></div>
+        <div data-include="components/footer.html"></div>
     </footer>
-    <script
-      src="https://lint.page/kit/4d0fe3.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <script src="scripts/include.js"></script>
     <script src="scripts/survey.js"></script>
-  </body>
+</body>
+
 </html>
