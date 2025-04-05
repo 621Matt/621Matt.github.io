@@ -2,6 +2,7 @@ const result = document.getElementById("result");
 const form = document.getElementById("intro-form");
 const submit = document.getElementById("submit");
 const moreCourses = document.getElementById("moreCourses");
+const pageBox = document.getElementById("pageBox");
 
 // Resets values in form / make it reload page
 function resetForm() {
@@ -86,7 +87,7 @@ function displayForm() {
       </div>
       <button onclick="resetForm()">Reset</button>`;
 
-    form.style.display = "none";
+    pageBox.style.display = "none";
 }
 
 // Submits form
