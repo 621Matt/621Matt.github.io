@@ -226,6 +226,57 @@ textarea {
   padding-bottom: 3%;
 }
 
+/* Slideshow page */
+.main-content {
+  box-sizing: border-box;
+  max-width: 1000px;
+
+}
+
+.slideshow-box {
+  max-width: fit-content;
+  position: relative;
+  margin: auto;
+}
+
+.slides {
+  display: none;
+}
+
+/* All image styling */
+img {
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.previous {
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+}
+
+.next {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  right: 0;
+}
+
+.notes {
+  color: white;
+  margin: 0 auto;
+  width: 45%;
+  
+}
+
+
+
+
 
 /* Mobile */
 @media screen and (min-width: 370px) and (max-width: 600px) {
