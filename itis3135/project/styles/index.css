@@ -15,7 +15,7 @@ html {
 }
 
 .img {
-    background: linear-gradient(rgba(0, 0, 0, 0.75)), url("/../itis3135/project/images/homepage-background.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.75)), url("../images/homepage-background.jpg");
     height: 100%;
     
     background-position: center;
