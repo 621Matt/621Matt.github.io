@@ -1,0 +1,115 @@
+body {
+    background-color: #373839;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    
+}
+
+html {
+    margin: 0;
+    height: 100%;
+}
+
+.img {
+    background: linear-gradient(rgba(0, 0, 0, 0.75)), url("/itis3135/project/images/homepage-background.jpg");
+    height: 100%;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.button {
+    border-radius: 5px;
+    background-color: #a4ac96;
+    color: black;
+    padding: 7px;
+    text-decoration: none;
+}
+
+/* image styling */
+figure {
+    width: 500px;
+    /* background-color: green; */
+    /* margin-left: 10%; */
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+img {
+    width: 500px;
+    border-radius: 500px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.9);
+}
+
+figcaption {
+    padding-top: 4px;
+    text-align: center;
+
+    /* color: black; */
+}
+
+.homepage-content {
+    padding-top: 10%;
+    margin: 0 auto;
+    text-align: center;
+    /* background-color: black; */
+    width: 50%;
+    font-size: 25px;
+}
+
+#picture-info {
+    position: fixed;
+    bottom: 0;
+    margin: 5px;
+}
+
+.homepage-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* margin-left: 3%; */
+    /* background-color: black; */
+    /* height: 100%; */
+}
+
+/* .homepage-img-container { */
+    /* display: flex;
+    justify-items: center;
+    align-items: center; */
+    /* margin: 0 auto; */
+    /* background: linear-gradient(90deg, #212A2E 0%, #272D2F 40%, #2B2F30 60%, #323434 90%, #373839 100%); */
+    /* background: linear-gradient(to right, #212A2E 0%, #2B2F30 50%, #373839 100%); */
+    /* background: linear-gradient(to right, #0F1112 0%, #212A2E 30%, #373839 70%, #505152 100%); */
+    /* background: linear-gradient(90deg, #212A2E 0%, #272D2F 25%, #2B2F30 50%, #323434 75%, #373839 100%); */
+    /* background: linear-gradient(90deg, #121415 0%, #212A2E 25%, #2A2E30 50%, #323536 75%, #373839 100%); */
+    
+
+    /* background-color: white; */
+
+    /* width: 525px; */
+    /* height: 100vh; */
+    /* width: 100vh; */
+/* } */
+
+.homepage-text-container {
+    /* margin-top: 25%;
+    font-size: 20px; */
+    /* background-color: black; */
+
+    margin: 0 auto;
+}
+
+/* h1 {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #a4ac96;
+} */
+
+
+h2 {
+    font-weight: normal;
+}
+
