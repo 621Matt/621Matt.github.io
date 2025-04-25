@@ -1,9 +1,16 @@
-body {
+html, body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(33, 28, 49);
+}
+
+/* body {
   background-color: rgb(52, 49, 61);
   width: auto;
   height: 100vh;
   font-family: sans-serif;
-}
+  
+} */
 
 .header-container {
   padding-bottom: 2%;
@@ -13,11 +20,11 @@ body {
   padding-top: 10%;
 }
 
-main {
+/* main {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
-}
+} */
 
 h1,
 h2,
@@ -76,7 +83,7 @@ footer {
 
 /*URL LINKS*/
 a {
-  color: grey;
+  color: rgb(167, 130, 130);
   text-decoration: none;
 }
 
@@ -171,7 +178,7 @@ td {
 .box2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   width: 80%;
 }
 
@@ -227,11 +234,11 @@ textarea {
 }
 
 /* Slideshow page */
-.main-content {
+/* .main-content {
   box-sizing: border-box;
   max-width: 1000px;
 
-}
+} */
 
 .slideshow-box {
   max-width: fit-content;
@@ -272,6 +279,14 @@ img {
   margin: 0 auto;
   width: 45%;
   
+}
+
+/* Drawing Page */
+canvas {
+  border: 4px solid black;
+  margin: 0 auto; 
+  display: block; 
+  border-radius: 4%;
 }
 
 
