@@ -1,35 +1,66 @@
 <!-- About Me -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Client Portfolio | About Me</title>
-    <link rel="stylesheet" href="../project/styles/about.css">
+    <link rel="stylesheet" href="../project/styles/about.css" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet"
-  />
-</head>
-<body>
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Navbar -->
-    <header>
-        <div data-include="../project/components/navbar.html"></div>
-    </header>
+   
+      <div data-include="../project/components/navbar.html"></div>
+    
 
     <main>
-        <h1>About Me</h1>
-        
+      <h2>About Me</h2>
+      <div class="line"></div>
+      <div class="about-box">
+        <figure class="about-img-box">
+          <img
+            src="../project/images/headshot.jpg"
+            alt="profile picture of me"
+            id="headshot"
+          />
+          <figcaption>My Profile Picture</figcaption>
+        </figure>
+
+        <div class="about-text-box">
+          <h3>Hey there, I'm Robert</h3>
+          <h4>Manangement Consultant</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+          <a class="button" href="">View Resume</a>
+
+        </div>
+      </div>
     </main>
 
-
     <!-- Footer -->
-    <footer>
-         <div data-include="../project/components/footer.html"></div>
-    </footer>
+    
+      <div data-include="../project/components/footer.html"></div>
+   
 
     <!-- Scripts -->
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script
+      src="https://lint.page/kit/4d0fe3.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="../scripts/include.js"></script>
-</body>
+    <!-- <script src="scripts/navbar.js"></script> -->
+  </body>
 </html>

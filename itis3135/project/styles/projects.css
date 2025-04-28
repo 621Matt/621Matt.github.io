@@ -1,0 +1,100 @@
+body {
+    /* background-color: #373839; */
+    background-color: #212529;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 11%;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 1%;
+    color: #a4ac96;
+  
+    margin-bottom: 0;
+}
+
+.line {
+  border-bottom: 3px solid #a4ac96;
+  max-width: 125px;
+  margin: 0 auto;
+}
+
+.slideshow-box {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    /* border: 3px solid black; */
+
+  }
+  
+  .slides {
+    display: none;
+    /* border: 3px solid grey; */
+    /* animation: fadeIn; */
+    /* border: 5px solid black */
+    display: block;
+  }
+
+  img {
+    border-radius: 2%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.7);
+    display: block;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    text-align: center;
+    font-style: italic;
+    padding-top: 1%;
+  }
+
+  .slides-text {
+    display: none;
+    /* border: 3px solid red; */
+    max-width: 60%;
+    margin: 0 auto;
+    /* padding: 1%; */
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+  
+  .previous {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    padding: 1%;
+    transition: background-color 200ms linear;
+  }
+  
+  .next {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    right: 0;
+    padding: 1%;
+    transition: background-color 200ms linear;
+  }
+
+  .next:hover, .previous:hover {
+    cursor: pointer;
+    background-color: #a4ac96;
+    color: black;
+  }
+
+  /* Fade in animation */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

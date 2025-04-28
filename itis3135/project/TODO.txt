@@ -1,0 +1,7 @@
+Resize text
+media queries for accessibility 
+fill in content
+js for navbar .active class
+
+!!Important!!
+link img icons on Services in footer
