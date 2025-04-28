@@ -29,6 +29,7 @@ html {
     color: black;
     padding: 7px;
     text-decoration: none;
+    transition: background-color 200ms linear;
 }
 
 /* image styling */
@@ -112,5 +113,10 @@ figcaption {
 
 h2 {
     font-weight: normal;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
 }
 

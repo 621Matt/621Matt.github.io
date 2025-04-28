@@ -17,11 +17,12 @@ h2 {
     padding-top: 1%;
     color: #a4ac96;
     margin-bottom: 0;
+    font-size: 30px;
 }
 
 .line {
     border-bottom: 3px solid #a4ac96;
-    max-width: 125px;
+    max-width: 80px;
     margin: 0 auto;
   }
 
@@ -32,11 +33,12 @@ h2 {
     /* border: 2px solid black; */
     margin: 0 auto;
     padding-top: 1%;
+    gap: 30px;
 }   
 
 .services {
     /* border: 2px solid black; */
-    width: 90%;
+    /* width: 90%; */
     display: block;
     margin: 0 auto;
     background-color: #5A5C5F;
@@ -45,7 +47,7 @@ h2 {
 }
 
 img {
-    width: 70px;
+    /* width: 70px; */
     background-color: #a4ac96;
     padding: 10px;
     border-radius: 5%;

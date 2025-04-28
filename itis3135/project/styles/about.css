@@ -44,10 +44,22 @@ img {
     
 }
 
+figcaption {
+    padding-top: 1%;
+}
+
 h4 {
     color: #a4ac96;
     padding: 0;
+    margin: 0;
+    font-size: 20px;
     /* margin: 0; */
+}
+
+h3 {
+    font-size: 24px;
+    /* border: 2px solid red; */
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -55,12 +67,14 @@ h2 {
     padding-top: 1%;
     color: #a4ac96;
     margin-bottom: 0;
+    font-size: 30px;
+    
     /* margin: 0; */
 }
 
 .line {
     border-bottom: 3px solid #a4ac96;
-    max-width: 125px;
+    max-width: 80px;
     margin: 0 auto;
   }
 
@@ -70,4 +84,10 @@ h2 {
     color: black;
     padding: 7px;
     text-decoration: none;
+    transition: background-color 200ms linear;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
 }

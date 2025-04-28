@@ -17,11 +17,12 @@ h2 {
     padding-top: 1%;
     color: #a4ac96;
     margin-bottom: 0;
+    font-size: 30px;
 }
 
 .line {
     border-bottom: 3px solid #a4ac96;
-    max-width: 125px;
+    max-width: 80px;
     margin: 0 auto;
   }
 
@@ -33,14 +34,20 @@ h2 {
     width: 60%;
     /* height: 70%; */
     margin: 0 auto;
+    padding-top: 1%;
+    border-radius: 2%;
   }
 
   .testimonies {
     /* border: 3px solid black; */
-    background-color: #5A5C5F;
+    background-color: #9E90A2;
     border-radius: 5%;
-    height: 50%;
+    /* height: 50%; */
     display: flex;
+  }
+
+  .testimonies:nth-child(2) {
+    background-color: #4D7EA8;
   }
 
   img {
@@ -52,6 +59,7 @@ h2 {
 
   figcaption {
     text-align: center;
+    font-weight: bold;
   }
 
   figure {

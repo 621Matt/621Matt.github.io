@@ -16,23 +16,28 @@ h2 {
     padding-top: 1%;
     color: #a4ac96;
     margin-bottom: 0;
+    font-size: 30px;
 }
 
 .line {
     border-bottom: 3px solid #a4ac96;
-    max-width: 125px;
+    max-width: 80px;
     margin: 0 auto;
   }
    
 
 .contact-text-box {
     background-color: #5A5C5F;
-    /* padding: 1px; */
+    
+    border-radius: 6px;
+    /* padding: 5px 5px 15px 5px; */
+    padding: 5px;
+}
 
+.contact-box {
     width: 50%;
     margin: 0 auto;
-    border-radius: 6px;
-    
+    padding-top: 1%;
 }
 
 img {
@@ -40,14 +45,20 @@ img {
 }
 
 .contact-links a {
-    background-color: #373839;
+    background-color: #a4ac96;
     padding: 8px;
     border-radius: 4px;
     color: white;
     text-decoration: none;
+    transition: background-color 200ms linear;
+}
+
+.contact-links a {
+    background-color: #373839;
 }
 
 .contact-links {
     text-align: center;
+    padding: 10px;
     margin: 0 auto;
 }

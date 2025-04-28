@@ -16,13 +16,13 @@ h2 {
     text-align: center;
     padding-top: 1%;
     color: #a4ac96;
-  
+    font-size: 30px;
     margin-bottom: 0;
 }
 
 .line {
   border-bottom: 3px solid #a4ac96;
-  max-width: 125px;
+  max-width: 80px;
   margin: 0 auto;
 }
 
@@ -70,26 +70,30 @@ h2 {
     
   }
   
-  .previous {
-    background-color: white;
+  .previous, .next {
+    background-color: #a4ac96;
     border-radius: 5px;
     color: black;
     padding: 1%;
     transition: background-color 200ms linear;
   }
   
-  .next {
-    background-color: white;
+  /* .next {
+    background-color: #a4ac96;
     color: black;
     border-radius: 5px;
     right: 0;
     padding: 1%;
     transition: background-color 200ms linear;
+  } */
+
+  .next {
+    right: 0;
   }
 
   .next:hover, .previous:hover {
     cursor: pointer;
-    background-color: #a4ac96;
+    background-color: white;
     color: black;
   }
 
