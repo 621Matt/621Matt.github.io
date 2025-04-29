@@ -5,3 +5,8 @@ js for navbar .active class
 
 !!Important!!
 link img icons on Services in footer
+<!-- fix about me picture and paragraph spacing  -->
+fix link in navbar.html
+
+add another dynamic js feature
+change underline / make it more distinct 

@@ -289,6 +289,19 @@ canvas {
   border-radius: 4%;
 }
 
+/* Peer Review */
+.checklist-box {
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  color: white;
+}
+
+img {
+  margin: 0 auto;
+  display: block;
+}
+
 
 
 
