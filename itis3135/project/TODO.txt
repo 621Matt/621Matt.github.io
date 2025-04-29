@@ -10,3 +10,6 @@ fix link in navbar.html
 
 add another dynamic js feature
 change underline / make it more distinct 
+wipe localstorage on load cuz it highlights shit
+write some text generate by chatgpt
+about me big button on index doesnt change active class

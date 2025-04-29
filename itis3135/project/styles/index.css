@@ -10,19 +10,31 @@ body {
    
 }
 
+
 html {
     margin: 0;
     height: 100%;
 }
 
-.img {
+/* .img {
     background: linear-gradient(rgba(0, 0, 0, 0.75)), url("../images/homepage-background.jpg");
     height: 100%;
     
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
+
+#background {
+    /* background: none; */
+    height: 100vh;
+    width: 100vw;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+  }
 .button {
     border-radius: 5px;
     background-color: #a4ac96;

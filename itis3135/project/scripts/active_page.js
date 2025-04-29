@@ -3,6 +3,7 @@ let activeIndex = localStorage.getItem("activeIndex");
 
 
 for (let i = 0; i < link.length; i++) {
+    // links[i].classList.remove("active");
     // Applies active class on saved index
     if (i === Number(activeIndex)) {
       link[i].classList.add("active");
