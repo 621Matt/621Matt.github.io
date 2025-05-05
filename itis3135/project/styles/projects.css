@@ -1,5 +1,4 @@
 body {
-    /* background-color: #373839; */
     background-color: #212529;
     margin: 0;
     padding: 0;
@@ -22,7 +21,7 @@ h2 {
 
 .line {
   border-bottom: 4px solid #a4ac96;
-  max-width: 150px;
+  max-width: 10rem;
   margin: 0 auto;
 }
 
@@ -31,16 +30,12 @@ h2 {
     position: relative;
     margin: 0 auto;
     width: 100%;
-    /* border: 3px solid black; */
+  
 
   }
   
   .slides {
     display: none;
-    /* border: 3px solid grey; */
-    /* animation: fadeIn; */
-    /* border: 5px solid black */
-    display: block;
   }
 
   img {
@@ -52,17 +47,49 @@ h2 {
 
   figcaption {
     text-align: center;
-    font-style: italic;
     padding-top: 1%;
   }
 
   .slides-text {
     display: none;
-    /* border: 3px solid red; */
     max-width: 60%;
     margin: 0 auto;
-    /* padding: 1%; */
   }
+
+
+  .slides-text ul{
+    display: block;
+    list-style: disc;
+    padding-left: 40px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    max-width: 90%;
+    
+  }
+  
+  .slides-text ul li{
+    all: unset;
+    display: list-item;
+
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  .slides-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  label {
+    font-size: 18px;
+    color: #a4ac96;
+  }
+
+
+  
+  
 
   .buttons {
     display: flex;
@@ -77,15 +104,7 @@ h2 {
     padding: 1%;
     transition: background-color 200ms linear;
   }
-  
-  /* .next {
-    background-color: #a4ac96;
-    color: black;
-    border-radius: 5px;
-    right: 0;
-    padding: 1%;
-    transition: background-color 200ms linear;
-  } */
+
 
   .next {
     right: 0;

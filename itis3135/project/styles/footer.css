@@ -1,16 +1,30 @@
 .footer-container {
     background-color: #373839;
-    /* background-color: #212529; */
     padding-top: 10px;
     padding-bottom: 9px;
     
     
     border-top: 1px solid #a4ac96;
     text-align: center;
-   
+    font-size: 17px;
 
     position: absolute;
     bottom: 0;
     width: 100%;
     
+}
+
+.footer-container a {
+    text-decoration: none;
+}
+
+.footer-container a:visited {
+    color: #a4ac96;
+}
+
+.footer-container a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    transition: background-color 200ms linear;
 }

@@ -1,23 +1,25 @@
-// TODO
-// Add image transitions because it is to jarring
-
 const backgrounds = [
-  'url("images/homepage-background2.jpg")',
-  'url("images/homepage-background3.jpg")',
-  'url("images/homepage-background.jpg")'
+  "images/homepage-background2.jpg",
+  "images/homepage-background3.jpg",
+  "images/homepage-background.jpg"
 ];
 
 let index = 0;
+const fader = document.getElementById("background-fader");
 
-//Changes background to one of the images in backgrounds
-const changingBackground = () => {
-  let currentBackground = document.getElementById("background");
-  index = (index + 1) % backgrounds.length;
-  currentBackground.style.background = `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), ${backgrounds[index]}`;
+const changeBackground = () => {
+  fader.style.opacity = 0;
+
+  setTimeout(() => {
+    fader.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(${backgrounds[index]})`;
+    fader.style.opacity = 1;
+    index = (index + 1) % backgrounds.length;
+  }, 700); // half of the fade duration
 };
 
-// Executes function every 5 seconds
-setInterval(changingBackground, 5000);
+// Start immediately
+fader.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(${backgrounds[index]})`;
+index = (index + 1) % backgrounds.length;
 
-// Initial function call on page load to set image
-changingBackground();
+// Run again every 5 secs
+setInterval(changeBackground, 5000);

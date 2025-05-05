@@ -1,16 +1,10 @@
-let link = document.getElementsByTagName("a");
-let activeIndex = localStorage.getItem("activeIndex");
+const currentPage = location.pathname.split("/").pop();
+const links = document.querySelectorAll(".nav-link");
 
-
-for (let i = 0; i < link.length; i++) {
-    // links[i].classList.remove("active");
-    // Applies active class on saved index
-    if (i === Number(activeIndex)) {
-      link[i].classList.add("active");
-    }
-  
-    //Adds event listeners to every link and saves active link's index
-    link[i].addEventListener("click", () => {
-      localStorage.setItem("activeIndex", i);
-    });
+// Highlights the active link that matches the current url path
+links.forEach((link) => {
+  const linkPage = link.getAttribute("href");
+  if (linkPage === currentPage) {
+    link.classList.add("active");
   }
+});

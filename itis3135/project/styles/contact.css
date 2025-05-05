@@ -1,12 +1,10 @@
 body {
-    /* background-color: #373839; */
     background-color: #212529;
     margin: 0;
     padding: 0;
     color: white;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-
     position: relative;
     min-height: 100vh;
 }
@@ -20,17 +18,15 @@ h2 {
 }
 
 .line {
-    border-bottom: 3px solid #a4ac96;
-    max-width: 80px;
+    border-bottom: 4px solid #a4ac96;
+    max-width: 12rem;
     margin: 0 auto;
   }
    
 
 .contact-text-box {
     background-color: #5A5C5F;
-    
     border-radius: 6px;
-    /* padding: 5px 5px 15px 5px; */
     padding: 5px;
 }
 

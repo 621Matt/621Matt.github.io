@@ -1,5 +1,4 @@
 body {
-    /* background-color: #373839; */
     background-color: #212529;
     margin: 0;
     padding: 0;
@@ -15,21 +14,16 @@ body {
 .about-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* border: 2px solid black; */
-    width: 70%;
+    max-width: 70%;
     margin: 0 auto;
-    /* padding-top: 4%; */
 }
 
 .about-text-box {
-    /* border: 2px solid black; */
-    
-    width: 65%;
-    /* background-color: rgba(0, 0, 0, 0.75); */
+    width: 65%; 
 }
 
 .about-img-box {
-    /* border: 2px solid black; */
+    
     width: 450px;
     text-align: center;
     font-style: italic;
@@ -37,7 +31,7 @@ body {
 
 /* headshot img */
 img {
-    width: 450px;
+    max-width: 450px;
     height: auto;
     border-radius: 2%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.7);
@@ -53,12 +47,10 @@ h4 {
     padding: 0;
     margin: 0;
     font-size: 20px;
-    /* margin: 0; */
 }
 
 h3 {
     font-size: 24px;
-    /* border: 2px solid red; */
     margin-bottom: 10px;
 }
 
@@ -68,13 +60,11 @@ h2 {
     color: #a4ac96;
     margin-bottom: 0;
     font-size: 30px;
-    
-    /* margin: 0; */
 }
 
 .line {
-    border-bottom: 3px solid #a4ac96;
-    max-width: 80px;
+    border-bottom: 4px solid #a4ac96;
+    max-width: 10rem;
     margin: 0 auto;
   }
 
@@ -91,3 +81,4 @@ h2 {
     background-color: white;
     color: black;
 }
+
